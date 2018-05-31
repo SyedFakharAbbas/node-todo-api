@@ -20,6 +20,7 @@ app.post('/todos', (req, res) => {
     console.log(req.body);
 });
 
+module.exports = {app};
 
 
 app.listen(3000, () => {
