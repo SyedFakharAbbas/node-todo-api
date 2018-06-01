@@ -8,3 +8,5 @@ var User = mongoose.model('User',{
         minlenght: 1
     }
 });
+
+module.exports = {User};
