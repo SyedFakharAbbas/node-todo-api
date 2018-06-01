@@ -42,7 +42,7 @@ app.get('/todos/:id', (req, res) => {
         if (!user) {
             return res.status(404).send('User not found!');
         }
-        res.status(200).send(user);
+        res.status(200).send({user});
     }).catch((e) => {
         res.status(404).send(e);
     });
